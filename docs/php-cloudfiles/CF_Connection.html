@@ -12,8 +12,8 @@
   <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
   <tr>
     <td class="header_menu">
-        
-                                    
+
+
                                                                       		  [ <a href="../classtrees_php-cloudfiles.html" class="menu">class tree: php-cloudfiles</a> ]
 		  [ <a href="../elementindex_php-cloudfiles.html" class="menu">index: php-cloudfiles</a> ]
 		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
@@ -41,8 +41,8 @@
 			<a href="../php-cloudfiles/_cloudfiles.php.html">		cloudfiles.php
 		</a><br>
 	  </div><br />
-      
-      
+
+
             <b>Classes:</b><br />
         <div class="package">
 		    		<a href="../php-cloudfiles/CF_Authentication.html">CF_Authentication</a><br />
@@ -70,7 +70,7 @@ Source Location: /cloudfiles.php<br /><br />
 
 
 
-        
+
 </td>
 
 <td valign="top">
@@ -237,7 +237,7 @@ $cfs_auth, [boolean
 $servicenet = False])</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Pass in a previously authenticated CF_Authentication instance.<br /><br /><p>Example:  <ol><li><div class="src-line">&nbsp;<span class="src-comm">#&nbsp;Create&nbsp;the&nbsp;authentication&nbsp;instance</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-comm">#</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-var">$auth&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../php-cloudfiles/CF_Authentication.html">CF_Authentication</a></span><span class="src-sym">(</span><span class="src-str">&quot;username&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-str">&quot;api_key&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
@@ -267,7 +267,7 @@ $servicenet = False])</code>
 </div>
 <br /><br />
 
-	
+
         <h4>Parameters:</h4>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
@@ -295,7 +295,7 @@ $servicenet = False])</code>
 )</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Close a connection<br /><br /><p>Example:  <ol><li><div class="src-line">&nbsp;<span class="src-var">$conn</span><span class="src-sym">-&gt;</span><a href="../php-cloudfiles/CF_Connection.html#methodclose">close</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
 </ol></p><p>Will close all current cUrl active connections.</p><br /><br /><br />
 <h4>Tags:</h4>
@@ -308,7 +308,7 @@ $servicenet = False])</code>
 </div>
 <br /><br />
 
-	
+
         <div class="top">[ <a href="#top">Top</a> ]</div>
   </div>
   <hr />
@@ -322,7 +322,7 @@ $servicenet = False])</code>
 $container_name = NULL])</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Create a Container<br /><br /><p>Given a Container name, return a Container instance, creating a new  remote Container if it does not exit.</p><p>Example:  <ol><li><div class="src-line">&nbsp;<span class="src-comm">#&nbsp;...&nbsp;authentication&nbsp;code&nbsp;excluded&nbsp;(see&nbsp;previous&nbsp;examples)&nbsp;...</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-comm">#</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-var">$conn&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../php-cloudfiles/CF_Authentication.html">CF_Authentication</a></span><span class="src-sym">(</span><span class="src-var">$auth</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
@@ -342,7 +342,7 @@ $container_name = NULL])</code>
 </div>
 <br /><br />
 
-	
+
         <h4>Parameters:</h4>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
@@ -366,7 +366,7 @@ $container_name = NULL])</code>
 $container = NULL])</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Delete a Container<br /><br /><p>Given either a Container instance or name, remove the remote Container.  The Container must be empty prior to removing it.</p><p>Example:  <ol><li><div class="src-line">&nbsp;<span class="src-comm">#&nbsp;...&nbsp;authentication&nbsp;code&nbsp;excluded&nbsp;(see&nbsp;previous&nbsp;examples)&nbsp;...</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-comm">#</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-var">$conn&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../php-cloudfiles/CF_Authentication.html">CF_Authentication</a></span><span class="src-sym">(</span><span class="src-var">$auth</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
@@ -395,7 +395,7 @@ $container = NULL])</code>
 </div>
 <br /><br />
 
-	
+
         <h4>Parameters:</h4>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
@@ -419,7 +419,7 @@ $container = NULL])</code>
 $container_name = NULL])</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Return a Container instance<br /><br /><p>For the given name, return a Container instance if the remote Container  exists, otherwise throw a Not Found exception.</p><p>Example:  <ol><li><div class="src-line">&nbsp;<span class="src-comm">#&nbsp;...&nbsp;authentication&nbsp;code&nbsp;excluded&nbsp;(see&nbsp;previous&nbsp;examples)&nbsp;...</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-comm">#</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-var">$conn&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../php-cloudfiles/CF_Authentication.html">CF_Authentication</a></span><span class="src-sym">(</span><span class="src-var">$auth</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
@@ -444,7 +444,7 @@ $container_name = NULL])</code>
 </div>
 <br /><br />
 
-	
+
         <h4>Parameters:</h4>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
@@ -469,7 +469,7 @@ $limit = 0], [
 $marker = NULL])</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Return array of Container instances<br /><br /><p>Return an array of CF_Container instances on the account.  The instances  will be fully populated with Container attributes (bytes stored and  Object count)</p><p>Example:  <ol><li><div class="src-line">&nbsp;<span class="src-comm">#&nbsp;...&nbsp;authentication&nbsp;code&nbsp;excluded&nbsp;(see&nbsp;previous&nbsp;examples)&nbsp;...</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-comm">#</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-var">$conn&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../php-cloudfiles/CF_Authentication.html">CF_Authentication</a></span><span class="src-sym">(</span><span class="src-var">$auth</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
@@ -494,7 +494,7 @@ $marker = NULL])</code>
 </div>
 <br /><br />
 
-	
+
         <h4>Parameters:</h4>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
@@ -522,7 +522,7 @@ $marker = NULL])</code>
 )</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Cloud Files account information<br /><br /><p>Return an array of two floats (since PHP only supports 32-bit integers);  number of containers on the account and total bytes used for the account.</p><p>Example:  <ol><li><div class="src-line">&nbsp;<span class="src-comm">#&nbsp;...&nbsp;authentication&nbsp;code&nbsp;excluded&nbsp;(see&nbsp;previous&nbsp;examples)&nbsp;...</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-comm">#</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-var">$conn&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../php-cloudfiles/CF_Authentication.html">CF_Authentication</a></span><span class="src-sym">(</span><span class="src-var">$auth</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
@@ -544,7 +544,7 @@ $marker = NULL])</code>
 </div>
 <br /><br />
 
-	
+
         <div class="top">[ <a href="#top">Top</a> ]</div>
   </div>
   <hr />
@@ -559,7 +559,7 @@ $limit = 0], [string
 $marker = NULL])</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Return list of remote Containers<br /><br /><p>Return an array of strings containing the names of all remote Containers.</p><p>Example:  <ol><li><div class="src-line">&nbsp;<span class="src-comm">#&nbsp;...&nbsp;authentication&nbsp;code&nbsp;excluded&nbsp;(see&nbsp;previous&nbsp;examples)&nbsp;...</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-comm">#</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-var">$conn&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../php-cloudfiles/CF_Authentication.html">CF_Authentication</a></span><span class="src-sym">(</span><span class="src-var">$auth</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
@@ -585,7 +585,7 @@ $marker = NULL])</code>
 </div>
 <br /><br />
 
-	
+
         <h4>Parameters:</h4>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
@@ -615,7 +615,7 @@ $limit = 0], [string
 $marker = NULL])</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Return array of information about remote Containers<br /><br /><p>Return a nested array structure of Container info.</p><p>Example:  <ol><li><div class="src-line">&nbsp;<span class="src-comm">#&nbsp;...&nbsp;authentication&nbsp;code&nbsp;excluded&nbsp;(see&nbsp;previous&nbsp;examples)&nbsp;...</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-comm">#</span></div></li>
 <li><div class="src-line">&nbsp;</div></li>
@@ -650,7 +650,7 @@ $marker = NULL])</code>
 </div>
 <br /><br />
 
-	
+
         <h4>Parameters:</h4>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
@@ -679,7 +679,7 @@ $marker = NULL])</code>
 $enabled_only = False])</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Return list of Containers that have been published to the CDN.<br /><br /><p>Return an array of strings containing the names of published Containers.  Note that this function returns the list of any Container that has  ever been CDN-enabled regardless of it's existence in the storage  system.</p><p>Example:  <ol><li><div class="src-line">&nbsp;<span class="src-comm">#&nbsp;...&nbsp;authentication&nbsp;code&nbsp;excluded&nbsp;(see&nbsp;previous&nbsp;examples)&nbsp;...</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-comm">#</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-var">$conn&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../php-cloudfiles/CF_Authentication.html">CF_Authentication</a></span><span class="src-sym">(</span><span class="src-var">$auth</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
@@ -706,7 +706,7 @@ $enabled_only = False])</code>
 </div>
 <br /><br />
 
-	
+
         <h4>Parameters:</h4>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
@@ -730,10 +730,10 @@ boolean
 $bool)</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Toggle debugging of instance and back-end HTTP module<br /><br /><br /><br />
 
-	
+
         <h4>Parameters:</h4>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
@@ -757,7 +757,7 @@ string
 $func_name)</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Set a user-supplied callback function to report download progress<br /><br /><p>The callback function is used to report incremental progress of a data  download functions (e.g. $container-&gt;list_objects(), $obj-&gt;read(), etc).  The specified function will be periodically called with the number of  bytes transferred until the entire download is complete.  This callback  function can be useful for implementing &quot;progress bars&quot; for large  downloads.</p><p>The specified callback function should take a single integer parameter.</p><p><ol><li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">read_callback</span><span class="src-sym">(</span><span class="src-var">$bytes_transferred</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
 <li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;<span class="src-str">&quot;&gt;&gt;&nbsp;downloaded&nbsp;&quot;&nbsp;</span>.&nbsp;<span class="src-var">$bytes_transferred&nbsp;</span>.&nbsp;<span class="src-str">&quot;&nbsp;bytes.\n&quot;</span><span class="src-sym">;</span></div></li>
 <li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">#&nbsp;...&nbsp;do&nbsp;other&nbsp;things&nbsp;...</span></div></li>
@@ -779,7 +779,7 @@ $func_name)</code>
 <li><div class="src-line">&nbsp;<span class="src-sym">)</span></div></li>
 </ol></p><br /><br /><br />
 
-	
+
         <h4>Parameters:</h4>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
@@ -803,7 +803,7 @@ string
 $func_name)</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Set a user-supplied callback function to report upload progress<br /><br /><p>The callback function is used to report incremental progress of a data  upload functions (e.g. $obj-&gt;write() call).  The specified function will  be periodically called with the number of bytes transferred until the  entire upload is complete.  This callback function can be useful  for implementing &quot;progress bars&quot; for large uploads/downloads.</p><p>The specified callback function should take a single integer parameter.</p><p><ol><li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">write_callback</span><span class="src-sym">(</span><span class="src-var">$bytes_transferred</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
 <li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;<span class="src-str">&quot;&gt;&gt;&nbsp;uploaded&nbsp;&quot;&nbsp;</span>.&nbsp;<span class="src-var">$bytes_transferred&nbsp;</span>.&nbsp;<span class="src-str">&quot;&nbsp;bytes.\n&quot;</span><span class="src-sym">;</span></div></li>
 <li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">#&nbsp;...&nbsp;do&nbsp;other&nbsp;things&nbsp;...</span></div></li>
@@ -821,7 +821,7 @@ $func_name)</code>
 <li><div class="src-line">&nbsp;<span class="src-comm">#</span></div></li>
 </ol></p><br /><br /><br />
 
-	
+
         <h4>Parameters:</h4>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
@@ -845,10 +845,10 @@ $func_name)</code>
 $path = NULL])</code>
     </td></tr></table>
     </td></tr></table><br />
-	
+
 		Use the Certificate Authority bundle included with this API<br /><br /><p>Most versions of PHP with cURL support include an outdated Certificate  Authority (CA) bundle (the file that lists all valid certificate  signing authorities).  The SSL certificates used by the Cloud Files  storage system are perfectly valid but have been created/signed by  a CA not listed in these outdated cURL distributions.</p><p>As a work-around, we've included an updated CA bundle obtained  directly from cURL's web site (http://curl.haxx.se).  You can direct  the API to use this CA bundle by calling this method prior to making  any remote calls.  The best place to use this method is right after  the CF_Authentication instance has been instantiated.</p><p>You can specify your own CA bundle by passing in the full pathname  to the bundle.  You can use the included CA bundle by leaving the  argument blank.</p><br /><br /><br />
 
-	
+
         <h4>Parameters:</h4>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">

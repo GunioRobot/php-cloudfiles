@@ -12,7 +12,7 @@ class Authentication extends PHPUnit_Framework_TestCase
         $this->auth = new CF_Authentication(USER, API_KEY);
         $this->auth->authenticate();
         $conn = new CF_Connection($this->auth);
-    }    
+    }
     public function testTokenCache()
     {
 	$this->auth =  new CF_Authentication(USER, API_KEY);
@@ -57,9 +57,9 @@ class Authentication extends PHPUnit_Framework_TestCase
         $auth = new CF_Authentication('e046e8db7d813050b14ce335f2511e83', 'bleurrhrhahra');
         $auth->authenticate();
     }
-    
+
     public function testAuthenticationAttributes()
-    {        
+    {
         $this->assertNotNull($this->auth->storage_url);
         $this->assertNotNull($this->auth->auth_token);
 
@@ -68,7 +68,7 @@ class Authentication extends PHPUnit_Framework_TestCase
     }
     public function testUkAuth()
     {
-        $this->assertTrue(UK_AUTHURL 
+        $this->assertTrue(UK_AUTHURL
                           == 'https://lon.auth.api.rackspacecloud.com');
     }
 }

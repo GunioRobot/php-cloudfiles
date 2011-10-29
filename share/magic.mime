@@ -222,8 +222,8 @@
 # modified by Joerg Jenderek
 # GRR the original test are too common for many DOS files
 # so test 1 <= kbits nibble <= E
-0       beshort		&0xffe0		
->2	ubyte&0xF0	>0x0F		
+0       beshort		&0xffe0
+>2	ubyte&0xF0	>0x0F
 >>2	ubyte&0xF0	<0xE1		audio/mpeg
 #MP3 with ID3 tag
 0	string		ID3		audio/mpeg
@@ -1012,7 +1012,7 @@
 0	string		WordPro\r\373	application/vnd.lotus-wordpro
 0	string		CPC\262		image/x-cpi
 
-# 
+#
 128	string		DICM		application/dicom
 
 # Symbian installation files

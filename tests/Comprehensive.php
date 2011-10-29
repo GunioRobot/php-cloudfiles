@@ -18,7 +18,7 @@ class Comprehensive extends PHPUnit_Framework_TestCase
         $this->temp_name_write = tempnam(get_tmpdir(), "php-cloudfiles");
         $this->temp_name_read = tempnam(get_tmpdir(), "php-cloudfiles");
     }
-    function __destruct () { 
+    function __destruct () {
         unlink($this->temp_name_write);
         unlink($this->temp_name_read);
     }
@@ -38,7 +38,7 @@ class Comprehensive extends PHPUnit_Framework_TestCase
             print "not enough free space to continue";
             exit(1);
         }
-        
+
         $chunk = 8192;
         $fp = fopen($this->temp_name_write, "wb");
         for ($i=1; $i <= $size;) {
@@ -50,9 +50,9 @@ class Comprehensive extends PHPUnit_Framework_TestCase
             $i += strlen($tmp);
         }
         fclose($fp);
-    }    
-    
-    public function test_big_file () { 
+    }
+
+    public function test_big_file () {
         $fname = basename($this->temp_name_write);
 
         $this->__create_big_file(500 * 1024 * 1024);
@@ -60,7 +60,7 @@ class Comprehensive extends PHPUnit_Framework_TestCase
         #Upload IT
         $md5_orig = md5_file($this->temp_name_write);
         $filesize_orig = filesize($this->temp_name_write);
-        
+
         $comp_cont = $this->conn->create_container("big-file-php");
         $obj = $comp_cont->create_object($fname);
         $obj->content_type = "application/octet-stream";
@@ -74,13 +74,13 @@ class Comprehensive extends PHPUnit_Framework_TestCase
         $o2->save_to_filename($this->temp_name_read);
         $md5_new = md5_file($this->temp_name_read);
         $filesize_new = filesize($this->temp_name_read);
-        
+
         $this->assertEquals($md5_orig, $md5_orig);
         $this->assertEquals($filesize_orig, $filesize_new);
 
         # Clean it
         $comp_cont->delete_object($fname);
-        
+
     }
 }
 ?>

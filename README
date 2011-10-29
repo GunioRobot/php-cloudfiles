@@ -42,12 +42,12 @@
 ;;      rm -rf docs && phpdoc -c phpdoc.ini
 ;;
 ;; Tests
-;; ------------------------------------------------------------------------ 
+;; ------------------------------------------------------------------------
 ;; The tests are based on phpunit and are run with PHPUnit 3.3.17
 ;; please follow the instructions on :
 ;;
 ;; http://www.phpunit.de/manual/current/en/installation.html
-;; 
+;;
 ;; to install PHPUnit. When installed just run the command phpunit on
 ;; the top of the directory and it will launch the tests.
 ;;
